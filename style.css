@@ -1,0 +1,81 @@
+body {
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+}
+
+h1 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 2em;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button#sim {
+    background-color: #ff6f61;
+    color: #fff;
+}
+
+button#nao {
+    background-color: #3da5d9;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #555;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.piscando {
+    color: #ff0000;
+    animation: piscar 1s infinite;
+}
+
+@keyframes piscar {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.amor {
+    color: #b30000;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        font-size: 1.5em;
+        padding: 10px 15px;
+    }
+}
